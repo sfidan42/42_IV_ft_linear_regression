@@ -5,6 +5,7 @@ def train(data, lr=0.1, epochs=1000):
 
     theta0, theta1 = 0, 0
     mileage, price = data['km'].copy(), data['price'].copy()
+
     mileage /= max(mileage)
     price /= max(price)
 
